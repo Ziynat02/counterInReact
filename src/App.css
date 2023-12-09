@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    color: #fff;
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.minus:hover{
+    background: linear-gradient(#70aff3,#1865b7);
+}
+.plus:hover{
+    background: linear-gradient(#70aff3,#1865b7);
+}
+.reset:hover{
+    background: linear-gradient(#70aff3,#1865b7);
+}
+
+.minus:active{
+   transform: translate(.05rem,.2rem);
+}
+.plus:active{
+    transform: translate(.05rem,.2rem);
+}
+.reset:active{
+    transform: translate(.05rem,.2rem);
+}
+button{
+    width: 16rem;
+    height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 1rem;
+    background: linear-gradient(#5fccff,#2989f0);
+    transition: all .15s;
+}
+@media (max-width:530px) and (min-width:380px) {
+    h1{
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+    .btns{
+        gap: 1.5rem;
+    }
+    button{
+        width: 10rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:380px){
+    h1{
+        color: #fff;
+        font-size: 8rem;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    button{
+        width: 20rem;
+        height: 5rem;
+        font-size: 2rem;
+    }
+}
